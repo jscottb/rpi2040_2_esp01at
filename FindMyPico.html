@@ -1,0 +1,39 @@
+<html>
+<body>
+<h2>Getting last RPI Pico ip</h2>
+<script>
+//
+// Scott Beasley - 2021
+//
+
+// CHANGE THIS to your DWEET "thing" name!!!
+const THINGY = 'XXXXXXXXXXXXXX';
+// See https://dweet.io for more info.
+const url = 'https://dweet.io/get/latest/dweet/for/' + THINGY;
+
+// Do a GET request for the URL
+const Http = new XMLHttpRequest();
+Http.open("GET", url);
+Http.send();
+
+// Handle the response sent back from the GET request.
+Http.onreadystatechange = (e) => {
+    console.log(Http.responseText)
+    var dweetdata = JSON.parse(Http.responseText)
+    
+    var ip = dweetdata["with"][0].content.ip;
+
+    // Hit F12 in the browser to see any console info
+    console.log(dweetdata);
+    console.log(ip);
+
+    // Build the URL to the Pico. You can add to as needed.
+    const url = 'http://' + ip + '/';
+    console.log(url);
+
+    // Redirect the browser to the real page.
+    window.location.href = url;
+}
+</script>
+</body>
+</html>
