@@ -11,7 +11,7 @@ The sample code works with the MBED OS RPI2040 as well as the Earle F. Philhower
       <br>- Sends a "Dweet" with the IP given via dweet.io (to be used later to find the Pi)
       <br>- Starts up the local web responder
       <br>- Serves up a landing page
-        <p><br>- Responds to url routes: 
+        <pstyle="margin-left:10%; margin-right:10%;">- Responds to url routes: 
           <br>- /ledon
           <br>- /ledoff
           <br>- /flash</p>
