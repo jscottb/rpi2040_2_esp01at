@@ -11,9 +11,9 @@ The sample code works with the MBED OS RPI2040 as well as the Earle F. Philhower
       <br>- Sends a "Dweet" with the IP given via dweet.io (to be used later to find the Pi)
       <br>- Starts up the local web responder
       <br>- Serves up a landing page
-        <p style="margin-left:10%; margin-right:10%;">- Responds to url routes: 
-          <br>- /ledon
-          <br>- /ledoff
-          <br>- /flash</p>
+      <br>- Responds to url routes: 
+          <ul><li>- /ledon
+          <li>- /ledoff
+          <li>- /flash</ul>
        
 Once the board is running the example, you can modify the FindMyPico.html file to pull back the IP of the Pico/ESP and open the example landing page. See the html file for more details.
