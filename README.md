@@ -1,4 +1,4 @@
-# rpi2040_2_esp01at
+# Raspberry Pi Pico & ESP
 RPI Pico/RPI2040 ESP01 AT interface code and PCB
 
 The PCB uses UART1 for the ESP connection and pin pairs 4 & 5 or 8 & 9 can be select via solder jumpers.
